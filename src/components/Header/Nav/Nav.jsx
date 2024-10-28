@@ -1,9 +1,9 @@
 const navigation = [
   { name: 'Accueil', title: 'Accueil', href: '/', current: false },
   { name: 'Profil Professionnel', title: 'Profil Professionnel', href: '/profil', current: true },
-  { name: 'Projets', title: 'Projets', href: '#mmm', current: false },
-  { name: 'Publications', title: 'Publications', href: '#mm', current: false },
-  { name: "Centres d'intérêt", title: "Centres d'intérêt", href: '#mm', current: false },
+  { name: 'Projets et Publications', title: 'Projets et Publications', href: '/projetspublications', current: false },
+  // { name: 'Publications', title: 'Publications', href: '#mm', current: false },
+  { name: "Centres d'intérêt", title: "Centres d'intérêt", href: '/centredinterets', current: false },
 ]
 
 function classNames(...classes) {
