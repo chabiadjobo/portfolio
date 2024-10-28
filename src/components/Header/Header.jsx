@@ -8,7 +8,7 @@ import { FaMedium, FaResearchgate, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md mt-16">
+    <header className="top-0 left-0 w-full z-50 bg-white shadow-md mt-16">
       <Disclosure as="nav">
         {({ open }) => (
           <>
