@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const navigation = [
   { name: 'Accueil', title: 'Accueil', href: '/', current: false },
   { name: 'Profil Professionnel', title: 'Profil Professionnel', href: '/profil', current: true },
@@ -15,7 +17,7 @@ export default function Nav() {
     <div className="hidden sm:ml-6 sm:block">
       <div className="flex space-x-4">
         {navigation.map((item) => (
-          <a
+          <Link
             key={item.name}
             title={item.title}
             href={item.href}
@@ -26,7 +28,7 @@ export default function Nav() {
             )}
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
