@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { DisclosureButton, DisclosurePanel } from '@headlessui/react'
 
 
@@ -21,8 +22,8 @@ export const NavMobile = () => {
         {navigation.map((item) => (
           <DisclosureButton
             key={item.name}
-            as="a"
-            href={item.href}
+            as={Link}
+            to={item.href}
             aria-current={item.current ? 'page' : undefined}
             className={classNames(
               item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
