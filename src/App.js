@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
-import { Home } from "./pages/home";
-import { Profil } from "./pages/profil";
-import { Projetspublications } from "./pages/projetspublications";
-import { Centredinterets } from "./pages/centredinterets";
+import { Home } from "./pages/Home";
+import { Profil } from "./pages/Profil";
+import { Projetspublications } from "./pages/Projetspublications";
+import { Centredinterets } from "./pages/Centredinterets";
 
 function App() {
   return (
