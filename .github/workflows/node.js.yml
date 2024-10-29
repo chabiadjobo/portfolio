@@ -27,6 +27,9 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+    
+    - name: debug checkpoint location
+      run: ls
 
     - name: Buld the project
       run: npm run build --if-present
