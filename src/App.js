@@ -8,14 +8,15 @@ import { Centredinterets } from "./pages/Centredinterets";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Home />} />
         <Route path="/profil" element={<Profil />} />
         <Route path="/projetspublications" element={<Projetspublications />} />
         <Route path="/centredinterets" element={<Centredinterets />} />
+        {/* Route par défaut pour gérer les chemins inconnus */}
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </Router>
