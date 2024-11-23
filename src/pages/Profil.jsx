@@ -11,8 +11,8 @@ export const Profil = () => {
     <>
       <Description />
       <Competence />
-      <Formation />
       <Experience />
+      <Formation />
       <Certification />
       {/* <Affiliation /> */}
     </>
